@@ -11,7 +11,7 @@ h3 {
   background-color: grey;
 }
 
-.home, .starship, .detail {
+.home, .starship, .detail, .error {
   text-align: center;
   padding: 5em;
   background: url('https://wallpapers.com/images/hd/star-wars-zoom-background-5wcj50djvqj9hhdb.jpg');
@@ -49,4 +49,8 @@ h3 {
 .list-group-item:hover {
   cursor: pointer;
   text-decoration: underline;
+}
+
+.error h2 {
+  background-color: white;
 }
