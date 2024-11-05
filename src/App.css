@@ -2,6 +2,51 @@
 
 }
 
+h3 {
+  background-color: white;
+  color: black;
+}
+
 .navbar {
   background-color: grey;
+}
+
+.home, .starship, .detail {
+  text-align: center;
+  padding: 5em;
+  background: url('https://wallpapers.com/images/hd/star-wars-zoom-background-5wcj50djvqj9hhdb.jpg');
+  background-size: cover;
+  height: 40em;
+}
+
+.home-info {
+  color: white;
+  background-color: grey;
+  width: 60%;
+  margin: auto;
+
+  h1 {
+    font-size: 50px;
+  }
+
+  p {
+    font-size: 30px;
+  }
+}
+
+.starship {
+  h2 {
+    color: white;
+    text-align: center;
+  }
+}
+
+.card {
+  width: 50%;
+  margin: auto;
+}
+
+.list-group-item:hover {
+  cursor: pointer;
+  text-decoration: underline;
 }

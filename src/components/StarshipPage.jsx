@@ -17,11 +17,24 @@ const StarshipPage = () => {
 
   return starship ? (
     <div className="detail">
-      <h2>Name: {starship.name}</h2>
-      ... Lets put more Data here! ...
-      <Link to="/starshipsList"> Return to starship list</Link>
+      <div className="card text-center">
+        <div className="card-header">
+          <h2>{starship.name}</h2>
+        </div>
+        <div className="card-body">
+          <p className="card-text">Class: {starship.starship_class}</p>
+          <p className="card-text">Model: {starship.model}</p>
+          <p className="card-text">Manufacturer: {starship.manufacturer}</p>
+          <p className="card-text">Capacity: {starship.cargo_capacity}</p>
+          <p className="card-text">Cost: {starship.cost_in_credits}</p>
+        </div>
+        <div className="card-footer text-body-secondary">
+          <Link to="/starshipsList"> Return to starship list</Link>
+        </div>
+      </div>
+
     </div>
-  ) : <h3>Finding starship...</h3>
+  ) : <div className="detail"><h3>Finding starship...</h3></div>
 }
 
 export default StarshipPage

@@ -21,15 +21,17 @@ const StarshipList = () => {
   return starshipList ? (
     <div className="starship">
       <h2>List of Starships</h2>
-      {
-        starshipList.map((starship, key) => (
-          <div key={key} onClick={() => showShip(key)} className="card">
-            <h3>{starship.name}</h3>
-          </div>
-        ))
-      }
+      <div className="card">
+        <ul className="list-group list-group-flush">
+          {starshipList.map((starship, key) => (
+            <li key={key} onClick={() => showShip(key)} className="list-group-item">
+              {starship.name}
+            </li>
+          ))}
+        </ul>
+      </div>
     </div>
-  ) : <h3>Finding starships list...</h3>
+  ) : <div className="starship"><h3>Finding starships list...</h3></div>
 }
 
 export default StarshipList
