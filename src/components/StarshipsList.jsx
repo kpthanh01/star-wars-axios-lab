@@ -2,7 +2,7 @@ import { useState, useEffect } from "react"
 import axios from 'axios'
 import { useNavigate } from "react-router-dom"
 
-const StarshipList = () => {
+const StarshipsList = () => {
   const [starshipList, setStarships] = useState()
   let navigate = useNavigate()
 
@@ -19,7 +19,7 @@ const StarshipList = () => {
   }
 
   return starshipList ? (
-    <div className="starship">
+    <div className="container">
       <h2>List of Starships</h2>
       <div className="card">
         <ul className="list-group list-group-flush">
@@ -31,7 +31,7 @@ const StarshipList = () => {
         </ul>
       </div>
     </div>
-  ) : <div className="starship"><h3>Finding starships list...</h3></div>
+  ) : <div className="container"><h3>Finding starships list...</h3></div>
 }
 
-export default StarshipList
+export default StarshipsList

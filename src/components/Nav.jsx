@@ -12,16 +12,16 @@ const Nav = () => {
                   <Link className="nav-link" to='/'>Home</Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link" to='/starshipsList'>Starships</Link>
+                  <Link className="nav-link" to='/starships'>Starships</Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link" to='#'>Films</Link>
+                  <Link className="nav-link" to='/films'>Films</Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link" to='#'>Planets</Link>
+                  <Link className="nav-link" to='/planets'>Planets</Link>
                 </li>
                 <li className="nav-item">
-                  <Link className="nav-link" to='#'>Characters</Link>
+                  <Link className="nav-link" to='/characters'>Characters</Link>
                 </li>
               </ul>
             </div>

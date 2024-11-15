@@ -29,7 +29,7 @@ const StarshipPage = () => {
           <p className="card-text">Cost: {starship.cost_in_credits}</p>
         </div>
         <div className="card-footer text-body-secondary">
-          <Link to="/starshipsList"> Return to starship list</Link>
+          <Link to="/starships"> Return to starship list</Link>
         </div>
       </div>
 
